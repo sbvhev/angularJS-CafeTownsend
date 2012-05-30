@@ -1,7 +1,7 @@
 { exec } = require 'child_process'
 
 PRODUCT     = "CafeTownsend"
-VERSION     = "v0.10.7"
+VERSION     = "v1.0.0rc10"
 FILENAME    = "#{ PRODUCT }"
 BOOTSTRAP   = "bootstrap"
 
@@ -18,7 +18,7 @@ PATH = "/usr/local/bin"
 # -------------------------------------------------------------
 
 task "debug", "Transcompiles Coffescript to JavaScript... no joins or minifications", ->
-	
+
 	#
 	# Build single-file CafeTownsend application engine
 	#
@@ -35,7 +35,7 @@ task "debug", "Transcompiles Coffescript to JavaScript... no joins or minificati
 	console.log "Compiling CafeTownsend loader to #{ DEBUG_PATH }/#{ BOOTSTRAP }.js"
 	exec "#{ PATH }/coffee --output #{ DEBUG_PATH } --compile coffee/#{ BOOTSTRAP }.coffee
 	", ( error, stdout, stderr ) ->
-	
+
 		console.log stdout + stderr if stdout or stderr
 		if error
 			throw error
@@ -47,14 +47,14 @@ task "debug", "Transcompiles Coffescript to JavaScript... no joins or minificati
 
 task "build", "Builds #{ PRODUCT } JavaScript & CSS from CoffeeScript & Less source code", ->
 	console.log "Building #{ PRODUCT } version #{ VERSION }"
-	
+
 	#
 	# Build single-file CafeTownsend application engine
 	#
 	console.log "Compiling CafeTownsend **.coffee to #{ OUTPUT_PATH }/#{ FILENAME }.js"
 	exec "#{ PATH }/coffee --join #{ FILENAME }.js --output #{ OUTPUT_PATH } --compile coffee/mindspace/angular/ coffee/mindspace/cafetownsend/service coffee/mindspace/cafetownsend/controller coffee/mindspace/cafetownsend/CafeTownsendApp.coffee
 ", ( error, stdout, stderr ) ->
-	
+
 		console.log stdout + stderr if stdout or stderr
 		if error
 			throw error
@@ -76,7 +76,7 @@ task "build", "Builds #{ PRODUCT } JavaScript & CSS from CoffeeScript & Less sou
 
 task "deploy", "Builds #{ PRODUCT } minified JavaScript & CSS", ->
 	console.log "Building #{ PRODUCT } version #{ VERSION }"
-	
+
 	#
 	# Build single-file CafeTownsend application engine
 	#

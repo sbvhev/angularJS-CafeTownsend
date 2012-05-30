@@ -13,7 +13,7 @@
 #   As such, shared data models and routes are managed at the `services` layer.
 #
 #   Note: These controllers should NEVER be instantiated manually via `new <xxx>Controller()` syntax.
-#         Instead, AngularJS will construct `scopes` and then `extends` those scope instances using 
+#         Instead, AngularJS will construct `scopes` and then `extends` those scope instances using
 #         the <xxx>Controller constructor/factory function. The `extend` effectively injects controller
 #         properties and methods into the targeted this.
 #
@@ -27,11 +27,11 @@
 # "use strict"
 
 # ********************************************
-# 
+#
 # SessionController
-# 
+#
 # Configure session and authentication information for entire app.
-# 
+#
 # ********************************************
 
 namespace 'mindspace.cafetownsend.controller'
@@ -39,14 +39,13 @@ namespace 'mindspace.cafetownsend.controller'
   SessionController:
 
     class SessionController
-      @inject : [ "$scope", "sessionManager", "$location", "$route" ]
-      
-      constructor : ( $scope, @sessionService, @$location, $route ) ->  
+      @inject : [ "$scope", "sessionManager", "$location" ]
+
+      constructor : ( $scope, @sessionService, @$location ) ->
         $scope.user        = @sessionService.session
         $scope.logoutUser  = angular.bind(this, @logoutUser)
 
         # Configure session model (for authentication) as root/parent scope for scopes created on route change.
-        $route.parent( $scope )
         return $scope
 
       logoutUser : (event) ->
