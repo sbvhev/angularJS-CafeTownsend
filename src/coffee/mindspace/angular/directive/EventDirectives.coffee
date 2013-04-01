@@ -8,7 +8,7 @@
 #
 #
 
-namespace 'mindspace.angular.directive'
+namespace( 'mindspace.angular.directive'
 
 	EventDirectives:
 
@@ -48,3 +48,4 @@ namespace 'mindspace.angular.directive'
 
 				), element )
 				return
+)

@@ -37,8 +37,7 @@
 #
 # ********************************************
 
-namespace 'mindspace.cafetownsend'
-
+namespace( 'mindspace.cafetownsend'
   CafeTownsendApp:
 
     class CafeTownsendApp
@@ -63,3 +62,4 @@ namespace 'mindspace.cafetownsend'
           return true
 
         return this
+)

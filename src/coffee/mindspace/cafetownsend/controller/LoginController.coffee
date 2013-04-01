@@ -7,7 +7,7 @@
 # 
 # ********************************************
 
-namespace 'mindspace.cafetownsend.controller'
+namespace( 'mindspace.cafetownsend.controller'
 
 	LoginController:
 
@@ -28,3 +28,4 @@ namespace 'mindspace.cafetownsend.controller'
 					user.authenticated = true
 					@$location.path( "/employee" )
 				return
+)

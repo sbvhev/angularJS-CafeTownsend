@@ -34,7 +34,7 @@
 #
 # ********************************************
 
-namespace 'mindspace.cafetownsend.controller'
+namespace( 'mindspace.cafetownsend.controller'
 
   SessionController:
 
@@ -52,3 +52,4 @@ namespace 'mindspace.cafetownsend.controller'
         @sessionService.logout()
         @$location.path( "/login" )
         return
+)

@@ -36,7 +36,7 @@
 #  
 # ********************************************
 
-namespace 'mindspace.cafetownsend.service'
+namespace( 'mindspace.cafetownsend.service'
 
   SessionService:
 
@@ -55,4 +55,4 @@ namespace 'mindspace.cafetownsend.service'
       logout : ->
         @session.authenticated = false
         return
-     
+)

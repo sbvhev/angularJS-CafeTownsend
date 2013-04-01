@@ -7,7 +7,7 @@
 # 
 # ********************************************
 
-namespace 'mindspace.cafetownsend.controller'
+namespace( 'mindspace.cafetownsend.controller'
 
   EmployeeEditController:
 
@@ -56,4 +56,4 @@ namespace 'mindspace.cafetownsend.controller'
 
         @$location.path( "/employee" )
         return
-      
+)

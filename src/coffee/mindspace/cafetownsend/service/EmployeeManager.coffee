@@ -34,7 +34,7 @@
 # Get list of all employees and current/selected employee
 # ********************************************
 
-namespace 'mindspace.cafetownsend.service'
+namespace( 'mindspace.cafetownsend.service'
 
   EmployeeManager:
 
@@ -92,4 +92,4 @@ namespace 'mindspace.cafetownsend.service'
         angular.forEach @list, (employee, key) ->
           found = employee  if employee.id is id
         return found
-        
+)
