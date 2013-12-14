@@ -17,7 +17,7 @@ This project contributes a superior port of the HTML5 CafeTownsend application;u
 ![Screenshot](https://github.com/ThomasBurleson/angularJS-CafeTownsend/raw/master/app/assets/images/screens.png)<br/>
 
 
-Click to play with the live [CafeTownsend Demo](http://thomasburleson.github.com/cafetownsend/index.html).
+Click to play with the [Live Demo](http://thomasburleson.github.io/angularJS-CafeTownsend/).
 
 
 
