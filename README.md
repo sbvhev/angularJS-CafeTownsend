@@ -126,6 +126,6 @@ This effort is still ongoing with some in-progress effort that will provide the 
 
 ## Contact
 
-Stay tuned for upcoming blog article and video on the [GridLinked](http://www.gridlinked.info) blog.<br/>
+Stay tuned for upcoming blog article and video on the [Solution Optimist](http://solutionoptimist.com) blog.<br/>
 For more information on angular please check out http://angularjs.org/
 
